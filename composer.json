@@ -1,0 +1,39 @@
+{
+    "name": "larassn/laravel-pulse-graphql",
+    "description": "Monitor your graphql requests with a Laravel-Pulse Card",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "rebing-graphql",
+        "graphql",
+        "rebing",
+        "pulse",
+        "laravel"
+    ],
+    "homepage": "https://github.com/larassn/laravel-pulse-graphql",
+    "authors": [
+        {
+            "name": "Ali Sasani",
+            "email": "alisasani15@gmail.com",
+            "role": "Back-end Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^11.0",
+        "laravel/pulse": "^1.0",
+        "rebing/graphql-laravel": "^9.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaraSsn\\LaravelPulseGraphql\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaraSsn\\LaravelPulseGraphql\\LaravelPulseGraphqlServiceProvider"
+            ]
+        }
+    }
+}
