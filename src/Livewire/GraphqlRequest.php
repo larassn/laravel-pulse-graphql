@@ -26,7 +26,7 @@ class GraphqlRequest extends Card
                     'graphql_request',
                     ['max', 'count', 'avg'],
                     match ($this->orderBy) {
-                        'count' => 'co unt',
+                        'count' => 'count',
                         'avg'   => 'avg',
                         default => 'max',
                     })
