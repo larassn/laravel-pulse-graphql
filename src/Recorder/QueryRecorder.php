@@ -52,7 +52,7 @@ class QueryRecorder
      */
     public function record(Carbon $startedAt, string $schemaName, $root, array $args, $context, ResolveInfo $info): void
     {
-        if (! Route::is(sprintf('%s*', config('graphql.route.prefix')))
+        if (! Route::is('graphql*')
             || ! in_array((string) $info->parentType, ['Query', 'Mutation'])
         ) {
             return;
